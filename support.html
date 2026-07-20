@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Calorie Tracker</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1c1c1e; --muted:#5c5c66; --bg:#fdfdfb; --card:#fff; --line:#e5e5ea; --brand:#0D9B6A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#f2f2f7; --muted:#a1a1aa; --bg:#111312; --card:#1a1d1c; --line:#2c2f2e; --brand:#2DD4A0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:32px 20px 72px; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; margin: 0 0 .3rem; letter-spacing:-0.02em; }
+  h2 { font-size: 1.1rem; margin: 1.6rem 0 .4rem; }
+  .lede { color: var(--muted); margin-bottom: 2rem; }
+  a { color: var(--brand); }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:1.4rem 0; }
+  details { border-bottom:1px solid var(--line); padding:.7rem 0; }
+  summary { cursor:pointer; font-weight:600; }
+  details p { margin:.6rem 0 .2rem; color:var(--muted); }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support</h1>
+  <p class="lede">Questions, bugs, or feedback about Calorie Tracker.</p>
+
+  <div class="box">
+    <strong>Email:</strong> <a href="mailto:jignesh.dev.apps@gmail.com">jignesh.dev.apps@gmail.com</a><br>
+    <span style="color:var(--muted)">One developer answers these, usually within two business days. Including your iOS version and what you were doing when something broke makes a fix much faster.</span>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>How do I delete my account?</summary>
+    <p>In the app: tap the gear icon on the Diary tab, then Account → Delete Account. This permanently erases your diary, recipes, weight history, and profile from our servers and your device. It cannot be undone.</p>
+  </details>
+
+  <details>
+    <summary>Does deleting my account cancel my subscription?</summary>
+    <p>No. Subscriptions are billed by Apple, so you must cancel separately in Settings → your name → Subscriptions on your iPhone. Cancel there first, then delete your account.</p>
+  </details>
+
+  <details>
+    <summary>My data isn't syncing between devices.</summary>
+    <p>Make sure you're signed in with the same email on both devices and that you have a network connection. You can force a sync from Settings → Account → Sync Now, which also shows when the last successful sync happened.</p>
+  </details>
+
+  <details>
+    <summary>Voice logging isn't hearing me.</summary>
+    <p>Check that microphone and speech recognition permissions are granted in iOS Settings → Calorie Tracker. Speech is converted to text on your device, so it also needs a moment after your first use to prepare the on-device recognizer.</p>
+  </details>
+
+  <details>
+    <summary>The nutrition numbers for a food look wrong.</summary>
+    <p>Generic foods come from the USDA database and packaged foods from Open Food Facts, which is community-maintained, so occasional entries are inaccurate. You can edit any logged entry's macros directly, and reporting the food to us helps us handle it better.</p>
+  </details>
+
+  <details>
+    <summary>How do I remove data the app wrote to Apple Health?</summary>
+    <p>Open the Health app, go to Browse → Nutrition (or Body Measurements for weight), select the data type, and delete the entries. You can also revoke the app's access entirely under Health → Sharing → Apps.</p>
+  </details>
+
+  <footer><a href="index.html">Calorie Tracker</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>

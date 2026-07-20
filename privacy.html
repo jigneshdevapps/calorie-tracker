@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Calorie Tracker</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1c1c1e; --muted:#5c5c66; --bg:#fdfdfb; --card:#fff; --line:#e5e5ea; --brand:#0D9B6A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#f2f2f7; --muted:#a1a1aa; --bg:#111312; --card:#1a1d1c; --line:#2c2f2e; --brand:#2DD4A0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:32px 20px 72px; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; letter-spacing:-0.02em; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .6rem; letter-spacing:-0.01em; }
+  .updated { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+  a { color: var(--brand); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  table { width:100%; border-collapse: collapse; margin:.8rem 0; font-size:.93rem; display:block; overflow-x:auto; }
+  th, td { text-align:left; padding:.55rem .7rem; border-bottom:1px solid var(--line); vertical-align: top; }
+  th { font-weight:600; }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:1.2rem 0; }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Calorie Tracker · Last updated 20 July 2026</p>
+
+  <p>Calorie Tracker is built and operated by Jignesh Sawant, an independent developer. This policy explains exactly what the app collects, where it goes, and how to get rid of it. There are no ads in this app, and your data is never sold or shared for advertising.</p>
+
+  <h2>What the app collects</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th></tr>
+    <tr><td>Email address and password</td><td>To create your account and sync your diary across devices. Passwords are hashed by our authentication provider — they are never visible to us.</td></tr>
+    <tr><td>Profile details: height, weight, target weight, age, biological sex, activity level, goal</td><td>To calculate your recommended calorie and macro targets. All of it is optional and you can leave any field blank.</td></tr>
+    <tr><td>Food entries, recipes, and weight log</td><td>The core function of the app. Stored so your diary is available on any device you sign in to.</td></tr>
+    <tr><td>Voice logging transcripts</td><td>When you log by voice, your speech is converted to text <strong>on your device</strong> by Apple's speech recognition. Only the resulting text is sent to our server and to Anthropic's Claude API to be turned into food items and macros. Transcripts and their results are stored so we can diagnose bad parses and improve accuracy.</td></tr>
+    <tr><td>Barcode numbers and food search terms</td><td>Sent to Open Food Facts and the USDA FoodData Central database to look up nutrition information. Camera images are processed entirely on your device and are never uploaded or stored.</td></tr>
+    <tr><td>Basic usage events</td><td>We record that the app was opened, that a food entry was logged (and whether it was manual, voice, barcode, recipe, or repeat), and that a recipe was created. We deliberately do <strong>not</strong> record what you ate in these events.</td></tr>
+    <tr><td>Subscription status</td><td>Whether you have an active subscription, provided by Apple and RevenueCat. We never see or handle your payment card details.</td></tr>
+  </table>
+
+  <h2>Apple Health</h2>
+  <div class="box">
+    <p style="margin:0">If you turn on the Apple Health integration, the app writes your logged nutrition and weight to Health, and reads your active energy, step count, and weight from it. <strong>Health data stays between your device and the Health app — it is never sent to our servers, never used for advertising or marketing, and never shared with anyone.</strong> You can revoke access at any time in the Health app under Sharing, and turn the integration off in Settings → Apple Health.</p>
+  </div>
+
+  <h2>Who else processes your data</h2>
+  <ul>
+    <li><strong>Supabase</strong> — hosts the database and authentication. Your rows are protected by row-level security, so one account cannot read another's data.</li>
+    <li><strong>Anthropic (Claude API)</strong> — receives voice transcripts and food descriptions to estimate nutrition. Data sent through the API is not used to train their models.</li>
+    <li><strong>Open Food Facts</strong> and <strong>USDA FoodData Central</strong> — receive barcode numbers and search terms only. They receive no account information.</li>
+    <li><strong>Apple</strong> and <strong>RevenueCat</strong> — handle subscription purchases and entitlement status.</li>
+  </ul>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>We do not sell your personal data.</li>
+    <li>We do not show ads or embed advertising or tracking SDKs.</li>
+    <li>We do not track you across other apps or websites.</li>
+    <li>We do not use your health or fitness data for marketing.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <p>You can permanently delete your account and everything in it from inside the app: <strong>Settings → Account → Delete Account</strong>. This immediately and irreversibly removes your profile, food entries, recipes, weight history, and goals from our servers and from your device.</p>
+  <p>Stored voice transcripts are disconnected from your account at the same time, so what remains cannot be traced back to you. Anything already written to Apple Health stays in the Health app, which is yours to manage; you can delete it there under Browse → Nutrition. If you would rather we did the deletion for you, email <a href="mailto:jignesh.dev.apps@gmail.com">jignesh.dev.apps@gmail.com</a>.</p>
+
+  <h2>Your rights</h2>
+  <p>You can ask for a copy of your data, ask for it to be corrected, or ask for it to be erased — including under the EU/UK GDPR and India's Digital Personal Data Protection Act. Email <a href="mailto:jignesh.dev.apps@gmail.com">jignesh.dev.apps@gmail.com</a> and we will respond within 30 days.</p>
+
+  <h2>Data retention and security</h2>
+  <p>Your data is kept for as long as your account exists. Everything travels over encrypted HTTPS connections and is stored encrypted at rest by our hosting provider. No online service can promise perfect security, but access to your rows is restricted to your own authenticated session.</p>
+
+  <h2>Children</h2>
+  <p>Calorie Tracker is not directed at children under 13, and we do not knowingly collect data from them. If you believe a child has created an account, email us and we will delete it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially, the date at the top will change and the updated version will be published here before the change takes effect.</p>
+
+  <h2>Contact</h2>
+  <p>Jignesh Sawant · <a href="mailto:jignesh.dev.apps@gmail.com">jignesh.dev.apps@gmail.com</a></p>
+
+  <footer><a href="index.html">Calorie Tracker</a> · <a href="support.html">Support</a></footer>
+</main>
+</body>
+</html>

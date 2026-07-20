@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calorie Tracker</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1c1c1e; --muted:#5c5c66; --bg:#fdfdfb; --card:#fff; --line:#e5e5ea; --brand:#0D9B6A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#f2f2f7; --muted:#a1a1aa; --bg:#111312; --card:#1a1d1c; --line:#2c2f2e; --brand:#2DD4A0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:64px 20px 72px; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 2.4rem; margin: 0 0 .5rem; letter-spacing:-0.03em; }
+  .lede { font-size: 1.15rem; color: var(--muted); margin-bottom: 2.4rem; }
+  a { color: var(--brand); }
+  ul.features { list-style:none; padding:0; margin: 0 0 2.4rem; }
+  ul.features li { background:var(--card); border:1px solid var(--line); border-radius:12px;
+                   padding:14px 16px; margin-bottom:10px; }
+  ul.features strong { display:block; }
+  ul.features span { color:var(--muted); font-size:.94rem; }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Calorie Tracker</h1>
+  <p class="lede">Log a meal by saying it out loud. A fast, ad-free calorie and macro tracker for iPhone.</p>
+
+  <ul class="features">
+    <li><strong>Voice logging</strong><span>Say "two eggs, toast with butter, and a coffee" and it becomes a logged meal with macros.</span></li>
+    <li><strong>It learns your usual meals</strong><span>Once it knows your routine, "my usual breakfast plus an extra egg" is one sentence away from logged.</span></li>
+    <li><strong>Barcode scanning and food search</strong><span>Packaged foods from Open Food Facts, generic foods from the USDA database.</span></li>
+    <li><strong>Recipes, weight tracking, and a home screen widget</strong><span>Build a recipe once, log a serving in a tap. Track weight and steps over time.</span></li>
+    <li><strong>Apple Health integration</strong><span>Free, never behind a paywall. Your health data never leaves your device.</span></li>
+  </ul>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a> ·
+    <a href="mailto:jignesh.dev.apps@gmail.com">jignesh.dev.apps@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
