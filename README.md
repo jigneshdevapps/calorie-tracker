@@ -1,6 +1,6 @@
-# Calorie Tracker — website
+# NomCal — website
 
-Public site for the Calorie Tracker iOS app, served with GitHub Pages at
+Public site for the NomCal iOS app, served with GitHub Pages at
 <https://jigneshdevapps.github.io/calorie-tracker/>.
 
 | Page | Purpose |
