@@ -29,14 +29,14 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">NomCal · Last updated 28 July 2026</p>
+  <p class="updated">NomCal · Last updated 7 August 2026</p>
 
   <p>NomCal is built and operated by Jignesh Sawant, an independent developer. This policy explains exactly what the app collects, where it goes, and how to get rid of it. There are no ads in this app, and your data is never sold or shared for advertising.</p>
 
   <h2>What the app collects</h2>
   <table>
     <tr><th>Data</th><th>Why</th></tr>
-    <tr><td>Email address and password</td><td>To create your account and sync your diary across devices. Passwords are hashed by our authentication provider — they are never visible to us.</td></tr>
+    <tr><td>Your name and email address, via Sign in with Apple</td><td>Sign in with Apple is the only way to create an account, so there is no password and we never see or store one. Apple gives us your email address — a private relay address unless you chose to share your real one — which identifies your account and syncs your diary across devices. On your first sign-in only, Apple may also share your name; if it does, we save it to your profile. You can edit or clear your name at any time in <strong>Settings → Profile</strong>, and leaving it blank does not affect anything in the app.</td></tr>
     <tr><td>Profile details: height, weight, target weight, age, biological sex, activity level, goal</td><td>To calculate your recommended calorie and macro targets. All of it is optional and you can leave any field blank.</td></tr>
     <tr><td>Food entries, recipes, and weight log</td><td>The core function of the app. Stored so your diary is available on any device you sign in to.</td></tr>
     <tr><td>Voice logging transcripts</td><td>When you log by voice, your speech is converted to text <strong>on your device</strong> by Apple's speech recognition. Only the resulting text is sent to our server and to Anthropic's Claude API to be turned into food items and macros. Transcripts and their results are stored so we can diagnose bad parses and improve accuracy.</td></tr>
@@ -55,6 +55,7 @@
     <li><strong>Supabase</strong> — hosts the database and authentication. Your rows are protected by row-level security, so one account cannot read another's data.</li>
     <li><strong>Anthropic (Claude API)</strong> — receives voice transcripts and food descriptions to estimate nutrition. Data sent through the API is not used to train their models.</li>
     <li><strong>Open Food Facts</strong> and <strong>USDA FoodData Central</strong> — receive barcode numbers and search terms only. They receive no account information.</li>
+    <li><strong>Apple</strong> — provides Sign in with Apple, which is how your account is created and authenticated. Apple decides what it shares with us; you control that when you first sign in, including whether to hide your email behind a private relay address.</li>
     <li><strong>Apple</strong> and <strong>RevenueCat</strong> — handle subscription purchases and entitlement status.</li>
   </ul>
 
@@ -67,7 +68,7 @@
   </ul>
 
   <h2>Deleting your data</h2>
-  <p>You can permanently delete your account and everything in it from inside the app: <strong>Settings → Account → Delete Account</strong>. This immediately and irreversibly removes your profile, food entries, recipes, weight history, and goals from our servers and from your device.</p>
+  <p>You can permanently delete your account and everything in it from inside the app: <strong>Settings → Account → Delete Account</strong>. This immediately and irreversibly removes your account itself — including your name and email address — along with your profile, food entries, recipes, weight history, and goals, from our servers and from your device.</p>
   <p>Stored voice transcripts are disconnected from your account at the same time, so what remains cannot be traced back to you. Anything already written to Apple Health stays in the Health app, which is yours to manage; you can delete it there under Browse → Nutrition. If you would rather we did the deletion for you, email <a href="mailto:jignesh.dev.apps@gmail.com">jignesh.dev.apps@gmail.com</a>.</p>
 
   <h2>Your rights</h2>
